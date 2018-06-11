@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Klavika';
+  src: url(../fonts/Klavika-Regular.otf);
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Klavika', sans-serif;
+}
+hr {
+  width: 100px;
+  color: #F74C3C;
+  border: 1px solid;
+}
+h2, h3 {
+  text-transform: uppercase;
+  color: #F74C3C;
+}
+h2 {
+  font-size: 30px;
+  margin: 0;
+}
+h3 {
+  font-size: 25px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+}
+
+/* Menu */
+
+nav {
+  background-color: #222;
+  padding: 12px 90px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 90%; /* I have no idea why this line apparently worked well */
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: inherit;
+  justify-content: flex-end;
+}
+li {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+nav img {
+  width: 226px;
+  height: 21px;
+}
+li a {
+  color: #999;
+  text-decoration: none;
+}
+li a:hover {
+  color: #AAA;
+}
+li a[role=button] {
+  padding: 8px 11px;
+  border-radius: 4px;
+  background-color: #5CB85C;
+  color: #FFF;
+}
+li a[role=button]:hover {
+  background-color: #28A745;
+}
+
+/* Main */
+
+.main {
+  background-image: url(../images/hero-image.jpg);
+  background-size: cover;
+  color: #FFF;
+  padding: 50px 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 60px;
+}
+.main p {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  margin: 50px 0;
+}
+.main span {
+  font-weight: 900;
+}
+.main p, .main a {
+  line-height: 25px;
+  letter-spacing: -1px;
+}
+.main a[role=button] {
+  font: bold 40px 'Helvetica', sans-serif;
+  background-color: #D9534F;
+  text-decoration: none;
+  color: inherit;
+  padding: 15px;
+  border-radius: 5px;
+}
+.main a[role=button]:hover {
+  background-color: #D2322D;
+}
+.main img {
+  weight: 87px;
+  height: 87px;
+  margin-top: 30px;
+}
+
+/* Middle */
+
+.middle {
+  background-color: #FFF;
+  padding: 50px 200px;
+}
+.middle img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.middle p {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.middle span {
+  color: #D9534F;
+}
+.middle a {
+  text-decoration: none;
+  color: inherit;
+}
+.middle a:hover {
+  text-decoration: underline;
+  color: #F74C3C;
+}
+
+/* Bottom */
+
+.bottom {
+  background-color: #EFEFEF;
+}
+.wrapper {
+  display: inherit;
+  margin-top: 20px;
+}
+.box {
+  display: inherit;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+}
+.box span {
+  background-color: #222;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.box p {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 0;
+}
+.box i {
+  color: #FFF;
+  font-size: 40px;
+}
+.box a[role=button] {
+  background-color: #F9F9F9;
+  color: #F74C3C;
+  text-decoration: none;
+  padding: 7px 10px;
+  font: bold 13px 'Helvetica', sans-serif;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+}
+.box a[role=button]:hover {
+  background-color: #EBEBEB;
+}
+
+/* Footer */
+
+footer {
+  height: 180px;
+  background-color: #F74C3C;
+  justify-content: flex-end;
+  align-items: flex-start !important;
+}
