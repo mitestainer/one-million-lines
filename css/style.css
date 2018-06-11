@@ -82,7 +82,7 @@ li a[role=button]:hover {
   background-image: url(../images/hero-image.jpg);
   background-size: cover;
   color: #FFF;
-  padding: 50px 220px;
+  padding: 100px 220px 50px 220px;
 
   display: flex;
   flex-direction: column;
