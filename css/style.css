@@ -81,6 +81,7 @@ li a[role=button]:hover {
 .main {
   background-image: url(../images/hero-image.jpg);
   background-size: cover;
+  background-attachment: fixed;
   color: #FFF;
   padding: 100px 220px 50px 220px;
 
