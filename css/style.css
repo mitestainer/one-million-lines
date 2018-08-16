@@ -27,7 +27,7 @@ h3 {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 4rem 3rem;
   align-items: center;
 }
 
@@ -35,19 +35,26 @@ h3 {
 
 nav {
   background-color: #222;
-  padding: 12px 90px;
+  height: 3.25rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
-  width: 90%; /* I have no idea why this line apparently worked well */
+}
+.menu {
+  padding: 0;
+  margin-right: 3rem;
+  display: inherit;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#menu, .menu label {
+  display: none;
 }
 ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
-
-  display: inherit;
-  justify-content: flex-end;
+  display: flex;
 }
 li {
   font-weight: bold;
@@ -56,8 +63,8 @@ li {
   text-transform: uppercase;
 }
 nav img {
-  width: 226px;
-  height: 21px;
+  margin-left: 5.7rem;
+  display: inherit;
 }
 li a {
   color: #999;
@@ -81,9 +88,9 @@ li a[role=button]:hover {
 .main {
   background-image: url(../images/hero-image.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #FFF;
-  padding: 100px 220px 50px 220px;
+  padding: 100px 220px 50px;
 
   display: flex;
   flex-direction: column;
@@ -92,7 +99,7 @@ li a[role=button]:hover {
 h1 {
   margin: 0;
   text-align: center;
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 .main p {
   font-family: 'Helvetica', sans-serif;
@@ -109,7 +116,7 @@ h1 {
   letter-spacing: -1px;
 }
 .main a[role=button] {
-  font: bold 40px 'Helvetica', sans-serif;
+  font: bold 2.5rem 'Helvetica', sans-serif;
   background-color: #D9534F;
   text-decoration: none;
   color: inherit;
@@ -129,7 +136,7 @@ h1 {
 
 .middle {
   background-color: #FFF;
-  padding: 50px 200px;
+  padding: 4rem 12.5rem;
 }
 .middle img {
   height: 150px;
@@ -161,6 +168,7 @@ h1 {
 .wrapper {
   display: inherit;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 .box {
   display: inherit;
@@ -209,4 +217,74 @@ footer {
   background-color: #F74C3C;
   justify-content: flex-end;
   align-items: flex-start !important;
+}
+footer img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 6rem 3rem;
+  }
+  .middle {
+    padding: 3rem 2rem;
+  }
+  .box {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  nav {
+    align-items: flex-start;
+    height: auto;
+  }
+  nav img {
+    margin: 1rem;
+    max-width: 100%;
+  }
+  .menu {
+    margin: 0;
+  }
+  .menu label {
+    display: inline;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.5rem 1rem 0.25rem;
+  }
+  .menu-content {
+    max-height: 0;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+  ul {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0;
+    align-items: center;
+  }
+  li {
+    margin: 0.5rem 0;
+  }
+  #menu:checked ~ .menu-content {
+    max-height: 100%;;
+  }
+  nav img {
+    margin-left: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .main a[role=button] {
+    font-size: 1.75rem;
+  }
+  .box {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  footer {
+    height: 4rem;
+    padding: 1rem!important;
+  }
 }

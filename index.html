@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>One Million Lines</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123741446-1"></script>
   <script>
@@ -18,27 +19,36 @@
 </head>
 <body>
   <nav>
-    <a href="#"><img src="images/logo.png" alt="One Million Lines" /></a>
-    <ul>
-      <li><a href="#who-we-are">Who we are</a></li>
-      <li><a href="#get-involved">Get involved</a></li>
-      <li><a href="#" role="button">Record lines</a></li>
-    </ul>
+    <a href="https://mitestainer.github.io/one-million-lines/"><img src="images/logo.png" alt="One Million Lines" /></a>
+    <div class="menu">
+      <input type="checkbox" id="menu" value="">
+      <label for="menu"><i class="fas fa-bars"></i></label>
+      <div class="menu-content">
+        <ul>
+          <li><a href="#who-we-are">Who we are</a></li>
+          <li><a href="#get-involved">Get involved</a></li>
+          <li><a href="#" role="button" onclick="alert()">Record lines</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
+
   <div class="main">
     <h1>Our goal is to inspire<br />
       Tallahassee to write 1,000,000<br />
       lines of code_</h1>
+
       <p>All over the country people are taking the <span>HOUR OF CODE</span> challenge issued by <span>CODE.org</span>. Millions of lines of code are being written. In the capital of Florida, Tallahassee, the community is taking the challenge and our goal is to write 1,000,000 lines of code_</p>
-      <a href="#" role="button">Get Involved</a>
+
+      <a href="#get-involved" role="button">Get Involved</a>
       <img src="images/code.png" alt="Code.org" />
     </div>
     <div id="who-we-are" class="content middle">
       <a href="#"><img src="images/academy-brand-med.png" alt="Massive Academy" /></a>
-    <h2>Who We Are</h2>
-<hr />
-    <p>We are <span><a href="#">MASSIVE Academy</a></span>. We aim to improve education through both method - effective project-based learning - and material - by teaching skills that are applicable to improving your life today.</p>
-</div>
+      <h2>Who We Are</h2>
+      <hr />
+      <p>We are <span><a href="#">MASSIVE Academy</a></span>. We aim to improve education through both method - effective project-based learning - and material - by teaching skills that are applicable to improving your life today.</p>
+    </div>
     <div id="get-involved" class="content bottom">
       <h2>Get Involved</h2>
       <hr />
@@ -69,8 +79,8 @@
         </div>
       </div>
     </div>
-<footer class="content">
-  <img src="images/bottom-logo.png" alt="One Million Lines" />
-</footer>
+    <footer class="content">
+      <img src="images/bottom-logo.png" alt="One Million Lines" />
+    </footer>
   </body>
   </html>
